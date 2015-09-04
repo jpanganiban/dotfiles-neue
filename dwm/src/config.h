@@ -1,0 +1,1 @@
+/home/human/dotfiles-neue/dwm/config.h
