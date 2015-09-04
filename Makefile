@@ -2,13 +2,17 @@ install-dependencies:
 	sudo pacman -Sy chromium curl rxvt-unicode feh xorg-xinit
 
 link-config:
-	-ln -s $(shell pwd)/xinitrc /home/${USER}/.xinitrc
-	-ln -s $(shell pwd)/bashrc /home/${USER}/.bashrc
+	-ln -s $(shell pwd)/bin ${HOME}/bin
+	-ln -s $(shell pwd)/xinitrc ${HOME}/.xinitrc
+	-ln -s $(shell pwd)/bashrc ${HOME}/.bashrc
 	-sudo ln -s $(shell pwd)/20-thinkpad.conf /etc/X11/xorg.conf.d/
+	-ln -s $(shell pwd)/xresources ${HOME}/.Xresources
 	@echo "Done"
 
 unlink-config:
-	rm /home/${USER}/.xinitrc
-	rm /home/${USER}/.bashrc
+	rm ${HOME}/.xinitrc
+	rm ${HOME}/.bashrc
 	sudo rm /etc/X11/xorg.conf.d/20-thinkpad.conf
+	rm ${HOME}/.Xresources
+	rm ${HOME}/bin
 	@echo "Done"

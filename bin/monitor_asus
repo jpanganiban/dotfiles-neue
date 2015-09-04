@@ -1,0 +1,2 @@
+#!/bin/bash
+xrandr --output DP1 --mode 2560x1440 --primary --output LVDS1 --off
