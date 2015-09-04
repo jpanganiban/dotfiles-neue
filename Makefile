@@ -7,6 +7,7 @@ link-config:
 	-ln -s $(shell pwd)/bashrc ${HOME}/.bashrc
 	-sudo ln -s $(shell pwd)/20-thinkpad.conf /etc/X11/xorg.conf.d/
 	-ln -s $(shell pwd)/xresources ${HOME}/.Xresources
+	-ln -s $(shell pwd)/tmux.conf ${HOME}/.tmux.conf
 	@echo "Done"
 
 unlink-config:
@@ -15,4 +16,9 @@ unlink-config:
 	sudo rm /etc/X11/xorg.conf.d/20-thinkpad.conf
 	rm ${HOME}/.Xresources
 	rm ${HOME}/bin
+	rm ${HOME}/.tmux.conf
 	@echo "Done"
+
+setup:
+	-make unlink-config
+	-make link-config
