@@ -8,9 +8,12 @@
 export PATH="$PATH:$HOME/bin"
 export LANG="en_US.UTF-8"
 export TERM="screen-256color"
+export WORKSPACE="$HOME/workspace"
 
 alias ls='ls --color=auto'
 alias la='ls -a'
+alias fig='docker-compose'
+
 PS1='[\u@\h \W]\$ '
 
 # Autocomplete
