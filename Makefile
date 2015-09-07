@@ -1,5 +1,5 @@
 install-dependencies:
-	sudo pacman -Sy chromium curl rxvt-unicode feh xorg-xinit
+	sudo pacman -Sy chromium curl rxvt-unicode feh xorg-xinit gvim
 
 link-config:
 	-ln -s $(shell pwd)/bin ${HOME}/bin
