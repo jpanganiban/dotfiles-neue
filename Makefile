@@ -9,6 +9,7 @@ link-config:
 	-ln -s $(shell pwd)/xresources ${HOME}/.Xresources
 	-ln -s $(shell pwd)/tmux.conf ${HOME}/.tmux.conf
 	-ln -s $(shell pwd)/conkyrc ${HOME}/.conkyrc
+	-ln -s $(shell pwd)/vim ${HOME}/.vim
 	@echo "Done"
 
 unlink-config:
@@ -19,6 +20,7 @@ unlink-config:
 	rm ${HOME}/bin
 	rm ${HOME}/.tmux.conf
 	rm ${HOME}/.conkyrc
+	rm ${HOME}/.vim
 	@echo "Done"
 
 setup:
