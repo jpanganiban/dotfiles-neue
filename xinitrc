@@ -6,4 +6,8 @@ setxkbmap -option "ctrl:nocaps"
 
 udiskie -2 &
 
-exec dwm
+run_conky &
+
+: ${WM:="dwm"}
+
+exec ${WM}

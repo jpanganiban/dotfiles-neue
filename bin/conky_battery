@@ -40,4 +40,5 @@ if battery >= 80 and battery < 90:
 if battery >= 90:
     out = dzen2.i('$HOME/icons/battery90.xbm')
 
-print(dzen2.ca("$HOME/bin/runsomething", "%s %s" % (battery, out)))
+print(battery)
+#print(dzen2.ca("$HOME/bin/runsomething", "%s %s" % (battery, out)))

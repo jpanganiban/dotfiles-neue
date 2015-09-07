@@ -1,0 +1,16 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 1.0
+total_run_times 0
+use_spacer none
+
+TEXT
+# CPU
+C: ${cpu}% | \
+\
+V: ${exec $HOME/bin/conky_volume} | \
+N: ${downspeedf wlp3s0} / ${upspeedf wlp3s0} ${exec $HOME/bin/conky_network} | \
+B: ${exec $HOME/bin/conky_battery} | \
+${time} | \
+jesse@jpanganiban  \

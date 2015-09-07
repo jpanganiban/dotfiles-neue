@@ -8,6 +8,7 @@ link-config:
 	-sudo ln -s $(shell pwd)/20-thinkpad.conf /etc/X11/xorg.conf.d/
 	-ln -s $(shell pwd)/xresources ${HOME}/.Xresources
 	-ln -s $(shell pwd)/tmux.conf ${HOME}/.tmux.conf
+	-ln -s $(shell pwd)/conkyrc ${HOME}/.conkyrc
 	@echo "Done"
 
 unlink-config:
@@ -17,6 +18,7 @@ unlink-config:
 	rm ${HOME}/.Xresources
 	rm ${HOME}/bin
 	rm ${HOME}/.tmux.conf
+	rm ${HOME}/.conkyrc
 	@echo "Done"
 
 setup:

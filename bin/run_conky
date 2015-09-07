@@ -1,0 +1,3 @@
+#!/bin/bash
+
+{ conky -c $HOME/.conkyrc | while read -r; do xsetroot -name "$REPLY"; done } > /dev/null
