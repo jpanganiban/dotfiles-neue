@@ -13,4 +13,4 @@ V: ${exec $HOME/bin/conky_volume} | \
 N: ${downspeedf wlp3s0} / ${upspeedf wlp3s0} ${exec $HOME/bin/conky_network} | \
 B: ${exec $HOME/bin/conky_battery} | \
 ${time} | \
-jesse@jpanganiban  \
+${exec whoami}@${exec hostname}  \
