@@ -11,7 +11,7 @@ strength = dzen2.exec_([
 
 # Disconnected
 if strength == '':
-    print(dzen2.fg('DC', colors.red))
+    print('DC')
     sys.exit(0)
 
 # Scale of 0-100
