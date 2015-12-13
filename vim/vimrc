@@ -49,8 +49,8 @@ NeoBundleCheck
 
 "Base------------------------------------------
 set fileencoding=utf-8
-set term=rxvt-unicode-256color
-set t_Co=256
+"set term=rxvt-unicode-256color
+"set t_Co=256
 set t_ut=
 set background=dark
 set modeline
@@ -81,7 +81,7 @@ let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 40
 
 autocmd WinEnter NERD_tree_* setlocal wiw=40
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "End NERDTree----------------------------------
 
 "Code------------------------------------------
