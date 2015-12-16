@@ -32,6 +32,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'morhetz/gruvbox'
+NeoBundle 'gilgigilgil/anderson.vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -40,7 +41,7 @@ NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 call neobundle#end()
 
 " Required:
-filetype plugin indent on
+filetype indent plugin on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -48,15 +49,15 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
 "Base------------------------------------------
+colorscheme candyman
 set fileencoding=utf-8
-"set term=rxvt-unicode-256color
+"set term=xterm-256color
 "set t_Co=256
-set t_ut=
-set background=dark
+"set t_ut=
 set modeline
+set background=dark
 
 let g:CSApprox_loaded = 1
-colorscheme jellybeans
 
 set wildmenu
 set hidden
@@ -73,6 +74,12 @@ set ea
 
 autocmd BufWritePost $MYVIMRC so %
 "End Base--------------------------------------
+
+"Transparency----------------------------------
+highlight Normal ctermbg=None
+highlight NonText ctermbg=None
+highlight LineNr ctermbg=None
+"End Transparency------------------------------
 
 "NERDTree--------------------------------------
 autocmd VimEnter * :NERDTreeToggle
