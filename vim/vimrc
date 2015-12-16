@@ -48,6 +48,12 @@ filetype indent plugin on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+"Transparency----------------------------------
+autocmd ColorScheme * highlight Normal ctermbg=None
+autocmd ColorScheme * highlight NonText ctermbg=None
+autocmd ColorScheme * highlight LineNr ctermbg=None
+"End Transparency------------------------------
+
 "Base------------------------------------------
 colorscheme candyman
 set fileencoding=utf-8
@@ -74,12 +80,6 @@ set ea
 
 autocmd BufWritePost $MYVIMRC so %
 "End Base--------------------------------------
-
-"Transparency----------------------------------
-highlight Normal ctermbg=None
-highlight NonText ctermbg=None
-highlight LineNr ctermbg=None
-"End Transparency------------------------------
 
 "NERDTree--------------------------------------
 autocmd VimEnter * :NERDTreeToggle
